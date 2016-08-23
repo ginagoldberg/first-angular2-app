@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from './book.service';
 
+import './rxjs-extensions';
+
 @Component({
     selector: 'my-app',
 

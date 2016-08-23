@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Headers, Http, Response } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
@@ -10,9 +11,9 @@ export class BookService {
 
   getBooks(): Promise<Book[]> {
     return this.http.get(this.booksUrl)
-    .toPromise()
-    .then(response => response.json().results as Book[])
-    .catch(this.handleError);
+      .toPromise()
+      .then(response => response.json().results as Book[])
+      .catch(this.handleError);
   }
 
   private handleError(error: any): Promise<any> {
