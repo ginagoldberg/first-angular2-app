@@ -14,7 +14,7 @@ import './rxjs-extensions';
           {{book.book_details.title}}
         </li>
       </ul>
-    `
+    `,
     providers: [BookService]
 })
 

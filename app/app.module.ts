@@ -8,13 +8,13 @@ import { BookService } from './book.service'
 
 @NgModule({
   imports: [
-    BrowserModule
+    BrowserModule,
     HttpModule
   ],
   declarations: [
     AppComponent
   ],
-  providers: [ BookService ]
+  providers: [ BookService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
