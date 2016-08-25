@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule }     from '@angular/http';
 
 import { AppComponent }  from './app.component';
+import { BookDetailComponent } from './book-detail.component';
 
 import { BookService } from './book.service'
 
@@ -12,9 +13,11 @@ import { BookService } from './book.service'
     HttpModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    BookDetailComponent,
   ],
   providers: [ BookService ],
   bootstrap: [ AppComponent ]
 })
+
 export class AppModule { }

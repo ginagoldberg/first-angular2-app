@@ -9,12 +9,13 @@ import './rxjs-extensions';
 
     template: `
       <h1>{{title}}</h1>
-      TODO: <h2>Books</h2>
-          <ul class="my-book-detail">
+      <h2>Books</h2>
+      <ul class="my-book-detail">
         <li *ngFor="let book of books"
           {{book.book_details.title}}
         </li>
       </ul>
+      <my-book-detail [book]="book"></my-book-detail>
     `,
     providers: [BookService]
 })
