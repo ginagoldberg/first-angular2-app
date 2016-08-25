@@ -18,7 +18,7 @@ export class BookService {
               .then(response => response.json().results as Book[])
               .then((bookData) => {
                   return bookData;
-              .catch(this.handleError);
+
               });
   }
 
