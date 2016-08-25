@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BookService } from './book.service';
+import { Book } from './book';
 
 import './rxjs-extensions';
 
@@ -9,7 +10,7 @@ import './rxjs-extensions';
     template: `
       <h1>{{title}}</h1>
       TODO: <h2>Books</h2>
-          <ul class="books">
+          <ul class="my-book-detail">
         <li *ngFor="let book of books"
           {{book.book_details.title}}
         </li>
